@@ -1,0 +1,10 @@
+{
+  "item.atomicengineering.tin_ingot": "Tin Ingot",
+  "item.atomicengineering.bronze_ingot": "Bronze Ingot",
+
+  "block.atomicengineering.tin_block": "Block of Tin",
+  "block.atomicengineering.tin_ore": "Tin Ore",
+
+  "creativetab.atomicengineering.elements": "Elements",
+  "creativetab.atomicengineering.alloys": "Alloys"
+}
