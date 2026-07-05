@@ -5,6 +5,8 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.wizardiewoo.atomicengineering.AtomicEngineering;
+import net.wizardiewoo.atomicengineering.item.custom.ModFoodProperties;
+import net.wizardiewoo.atomicengineering.item.custom.ScrewdriveItem;
 
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(AtomicEngineering.MOD_ID);
@@ -14,7 +16,11 @@ public class ModItems {
     public static final DeferredItem<Item> BRONZE_INGOT = ITEMS.register( "bronze_ingot",
             () -> new Item(new Item.Properties()));
 
+    public static final DeferredItem<Item> SCREWDRIVER = ITEMS.register("screwdriver",
+            () -> new ScrewdriveItem(new Item.Properties().durability(32)));
 
+    public static final DeferredItem<Item> STRAWBERRY = ITEMS.register("strawberry",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.STRAWBERRY)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

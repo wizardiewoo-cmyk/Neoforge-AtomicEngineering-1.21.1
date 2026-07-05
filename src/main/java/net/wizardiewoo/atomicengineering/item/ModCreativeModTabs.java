@@ -31,6 +31,16 @@ public class ModCreativeModTabs {
                     .displayItems((parameters, output) -> {
                         output.accept(ModItems.BRONZE_INGOT);
 
+                    }).build());    public static final Supplier<CreativeModeTab> TOOS_TAB = CREATIVE_MODE_TAB.register("tools_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.SCREWDRIVER.get()))
+                    .withTabsBefore(ResourceLocation.fromNamespaceAndPath(AtomicEngineering.MOD_ID, "alloys_tab"))
+                    .title(Component.translatable("creativetab.atomicengineering.tools"))
+                    .displayItems((parameters, output) -> {
+                        output.accept(ModItems.SCREWDRIVER);
+                        output.accept(ModBlocks.TEST_BLOCK);
+                        output.accept(ModItems.STRAWBERRY);
+                        output.accept(ModBlocks.CHARRED_LOG);
+
                     }).build());
 
 

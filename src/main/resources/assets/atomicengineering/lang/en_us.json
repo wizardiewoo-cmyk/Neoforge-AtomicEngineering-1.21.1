@@ -1,10 +1,15 @@
 {
   "item.atomicengineering.tin_ingot": "Tin Ingot",
   "item.atomicengineering.bronze_ingot": "Bronze Ingot",
+  "item.atomicengineering.screwdriver": "Screwdriver",
+
+  "item.atomicengineering.strawbery": "Strawbery",
 
   "block.atomicengineering.tin_block": "Block of Tin",
   "block.atomicengineering.tin_ore": "Tin Ore",
+  "block.atomicengineering.test_block": "Test Block",
 
   "creativetab.atomicengineering.elements": "Elements",
-  "creativetab.atomicengineering.alloys": "Alloys"
+  "creativetab.atomicengineering.alloys": "Alloys",
+  "creativetab.atomicengineering.tools": "Tools"
 }

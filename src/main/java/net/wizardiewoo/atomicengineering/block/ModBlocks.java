@@ -11,6 +11,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.wizardiewoo.atomicengineering.AtomicEngineering;
+import net.wizardiewoo.atomicengineering.block.custom.TestBlock;
 import net.wizardiewoo.atomicengineering.item.ModItems;
 
 public class ModBlocks {
@@ -23,7 +24,12 @@ public class ModBlocks {
     public static final DeferredBlock<Block> TIN_ORE = registerBlock("tin_ore",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(2f).requiresCorrectToolForDrops().sound(SoundType.COPPER)));
-
+    public static final DeferredBlock<Block> TEST_BLOCK = registerBlock("test_block",
+            () -> new TestBlock(BlockBehaviour.Properties.of()
+                    .strength(2f).noLootTable()));
+    public static final DeferredBlock<Block> CHARRED_LOG = registerBlock("charred_log",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1f).sound(SoundType.WOOD)));
 
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {

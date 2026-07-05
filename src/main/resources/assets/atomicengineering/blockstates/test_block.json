@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "atomicengineering:block/test_block"
+    }
+  }
+}
