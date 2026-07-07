@@ -1,9 +1,17 @@
 {
   "item.atomicengineering.tin_ingot": "Tin Ingot",
   "item.atomicengineering.bronze_ingot": "Bronze Ingot",
-  "item.atomicengineering.screwdriver": "Screwdriver",
 
-  "item.atomicengineering.strawbery": "Strawbery",
+  "item.atomicengineering.screwdriver": "Screwdriver",
+  "item.atomicengineering.classic_thermometer": "Classic Thermometer",
+
+  "item.atomicengineering.strawberry": "Strawberry",
+
+  "item.atomicengineering.bronze_sword": "Bronze Sword",
+  "item.atomicengineering.bronze_pickaxe": "Bronze Pickaxe",
+  "item.atomicengineering.bronze_shovel": "Bronze Shovel",
+  "item.atomicengineering.bronze_axe": "Bronze Axe",
+  "item.atomicengineering.bronze_hoe": "Bronze Hoe",
 
   "block.atomicengineering.tin_block": "Block of Tin",
   "block.atomicengineering.tin_ore": "Tin Ore",
@@ -11,5 +19,12 @@
 
   "creativetab.atomicengineering.elements": "Elements",
   "creativetab.atomicengineering.alloys": "Alloys",
-  "creativetab.atomicengineering.tools": "Tools"
+  "creativetab.atomicengineering.tools": "Tools",
+
+  "tooltip.atomicengineering.test_block": "This block is a test",
+
+  "tooltip.atomicengineering.classicthemometer.shift_down": "This Item Can measure temperature",
+  "tooltip.atomicengineering.classicthemometer": "Press Shift for more info",
+
+  "tooltip.atomicengineering.strawberry.tooltip": "Yeah this is op it will get changed ig"
 }

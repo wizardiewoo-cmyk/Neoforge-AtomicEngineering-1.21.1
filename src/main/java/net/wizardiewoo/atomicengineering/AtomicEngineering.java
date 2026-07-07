@@ -2,8 +2,10 @@ package net.wizardiewoo.atomicengineering;
 
 import net.minecraft.world.item.CreativeModeTabs;
 import net.wizardiewoo.atomicengineering.block.ModBlocks;
+import net.wizardiewoo.atomicengineering.component.ModDataComponents;
 import net.wizardiewoo.atomicengineering.item.ModCreativeModTabs;
 import net.wizardiewoo.atomicengineering.item.ModItems;
+import net.wizardiewoo.atomicengineering.util.ModItemProperties;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -43,6 +45,8 @@ public class AtomicEngineering {
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
+        ModDataComponents.register(modEventBus);
+
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
@@ -73,11 +77,11 @@ public class AtomicEngineering {
     }
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
-    @EventBusSubscriber(modid = AtomicEngineering.MOD_ID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+    @EventBusSubscriber(modid = AtomicEngineering.MOD_ID, value = Dist.CLIENT)
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
-
+            ModItemProperties.addCustomItemProperties();
         }
     }
 }

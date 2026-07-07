@@ -31,6 +31,22 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
         add(ModBlocks.CHARRED_LOG.get(),
                 block -> createMultipleOreDrops(ModBlocks.CHARRED_LOG.get(), ModItems.BRONZE_INGOT.get(), 2,5));
+
+        dropSelf(ModBlocks.CONCRETE_STAIRS.get());
+        add(ModBlocks.CONCRETE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.CONCRETE_SLAB.get()));
+
+        dropSelf(ModBlocks.CONCRETE_PRESSURE_PLATE.get());
+        dropSelf(ModBlocks.CONCRETE_BUTTON.get());
+
+        dropSelf(ModBlocks.CONCRETE_FENCE.get());
+        dropSelf(ModBlocks.CONCRETE_FENCE_GATE.get());
+        dropSelf(ModBlocks.CONCRETE_WALL.get());
+        dropSelf(ModBlocks.CONCRETE_TRAPDOOR.get());
+
+        add(ModBlocks.CONCRETE_DOOR.get(),
+                block -> createDoorTable(ModBlocks.CONCRETE_DOOR.get()));
+
     }
 
     protected LootTable.Builder createMultipleOreDrops(Block pBlock, Item item, float minDrops, float maxDrops) {

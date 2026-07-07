@@ -10,6 +10,9 @@ import net.wizardiewoo.atomicengineering.AtomicEngineering;
 
 public class ModTags {
     public static class Blocks {
+        public static final TagKey<Block> NEEDS_BRONZE_TOOL = createTag("needs_bronze_tool");
+        public static final TagKey<Block> INCORRECT_FOR_BRONZE_TOOL = createTag("incorrect_for_bronze_tool");
+                //change this later
 
         private static TagKey<Block> createTag(String name) {
             return BlockTags.create(ResourceLocation.fromNamespaceAndPath(AtomicEngineering.MOD_ID, name));

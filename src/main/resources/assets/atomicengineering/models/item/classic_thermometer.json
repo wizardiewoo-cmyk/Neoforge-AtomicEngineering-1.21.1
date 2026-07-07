@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "atomicengineering:item/classic_thermometer"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "atomicengineering:used": 1
+      },
+      "model": "atomicengineering:item/classic_thermometer_used"
+    }
+  ]
+}
