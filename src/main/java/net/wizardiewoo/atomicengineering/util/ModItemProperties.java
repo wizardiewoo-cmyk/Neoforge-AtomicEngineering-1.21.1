@@ -11,8 +11,6 @@ public class ModItemProperties {
         ItemProperties.register(ModItems.CLASSICTHERMOMETER.get(), ResourceLocation.fromNamespaceAndPath(AtomicEngineering.MOD_ID, "used"),
                 (stack, level, entity, seed) -> stack.get(ModDataComponents.COORDINATES) != null ? 1f : 0f);
 
-        ItemProperties.register(ModItems.BRONZE_INGOT.get(), ResourceLocation.fromNamespaceAndPath(AtomicEngineering.MOD_ID, "temperature"),
-                    (stack, level, entity, seed) -> stack.get(ModDataComponents.COORDINATES) != null ? 1f : 0f);
 
     }
 }

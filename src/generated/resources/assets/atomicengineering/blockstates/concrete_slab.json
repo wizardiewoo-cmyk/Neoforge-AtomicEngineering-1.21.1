@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "atomicengineering:block/concrete_slab"
+    },
+    "type=double": {
+      "model": "atomicengineering:block/tin_block"
+    },
+    "type=top": {
+      "model": "atomicengineering:block/concrete_slab_top"
+    }
+  }
+}

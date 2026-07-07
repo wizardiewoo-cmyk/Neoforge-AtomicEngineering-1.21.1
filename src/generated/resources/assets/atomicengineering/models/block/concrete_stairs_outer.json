@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "atomicengineering:block/tin_block",
+    "side": "atomicengineering:block/tin_block",
+    "top": "atomicengineering:block/tin_block"
+  }
+}
